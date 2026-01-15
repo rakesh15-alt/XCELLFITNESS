@@ -454,3 +454,45 @@ html {
     font-weight: bold;
     margin: 10px 0;
 }
+
+/* MOBILE STYLING */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .navbar li a {
+        padding: 12px 25px; /* slightly bigger touch area */
+    }
+
+    .program-cards,
+    .pricing-cards,
+    .contact-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .trainer-card,
+    .info-box,
+    .timing-box,
+    .contact-card,
+    .photo-card {
+        width: 95%; /* full width on mobile */
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .join-btn {
+        padding: 12px 35px;
+        font-size: 14px;
+    }
+}
