@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XCELLFITNESS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">XCELL<span>FITNESS</span></div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trainers.html">Trainer</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="equipments.html">EQUIPMENTS</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero reveal">
+    <div class="hero-text">
+        <h1>Built for Your <span>Fitness Lifestyle</span></h1>
+        <p>Train Smarter. Perform Better. Grow Stronger.</p>
+        <button>Join Now</button>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about reveal">
+    <h2>About XCELLFITNESS</h2>
+    <p>
+        XCELLFITNESS is a modern and well-equipped gym established in 2022,
+        dedicated to transforming lives through fitness. Located in
+        Panikhaiti, Guwahati, Kamrup – 781026, the gym offers a motivating and
+        disciplined workout environment. XCELLFITNESS focuses on strength
+        training, weight training, and overall physical development. Our gym
+        supports beginners as well as advanced fitness enthusiasts with
+        professional guidance, clean facilities, and quality equipment.
+        More than a gym, XCELLFITNESS is a growing fitness community.
+    </p>
+</section>
+
+    <div class="info-box">
+        <p><strong>Owner:</strong> BISWAJIT MAJUMDER</p>
+        <p><strong>Manager:</strong> Tilak</p>
+    </div>
+</section>
+
+<!-- TIMING -->
+<section class="timing reveal">
+    <h2>Gym Timings</h2>
+    <div class="timing-box">
+        <p><strong>Morning:</strong> 6:00 AM – 10:00 AM</p>
+        <p><strong>Evening:</strong> 4:30 PM – 10:00 PM</p>
+    </div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="programs reveal">
+    <h2>Training Programs</h2>
+    <div class="program-cards">
+        <div class="card">Strength Training</div>
+        <div class="card">Weight Training</div>
+        <div class="card">Cardio Training</div>
+        <div class="card">More Coming Soon</div>
+    </div>
+</section>
+
+<!-- TRAINER -->
+<section class="trainers reveal">
+    <h2>Our Trainer</h2>
+    <div class="trainer-card">
+        <h3>RAJ</h3>
+        <p>Certified Fitness Trainer</p>
+    </div>
+</section>
+
+<!-- EXTRA SPACE -->
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 XCELLFITNESS | All Rights Reserved</p>
+</footer>
+
+<script>
+    const reveals = document.querySelectorAll(".reveal");
+
+    const revealOnScroll = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    reveals.forEach(reveal => {
+        revealOnScroll.observe(reveal);
+    });
+</script>
+</body>
+</html>
