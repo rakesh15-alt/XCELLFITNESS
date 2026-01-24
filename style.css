@@ -496,3 +496,16 @@ html {
         font-size: 14px;
     }
 }
+
+body::after {
+  content: "Designed & Owned by Rakesh";
+  position: fixed;
+  bottom: 8px;
+  right: 12px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  z-index: 9999;
+  user-select: none;
+}
+
