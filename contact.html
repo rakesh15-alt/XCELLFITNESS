@@ -30,6 +30,64 @@
   .teacher-photo {
     height: 180px;
   }
+
+  .contact-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  width: 280px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  background: #111;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.photo-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
+  text-align: center;
+}
+
+.photo-overlay h3 {
+  color: #a6ff00;
+  margin-bottom: 5px;
+}
+
+.contact-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.contact-number {
+  display: inline-block;
+  margin-top: 8px;
+  color: #00eaff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .photo-card img {
+    height: 220px;
+  }
+}
+
     </STYLE>
 </head>
 <body>
@@ -43,13 +101,18 @@
     <div class="contact-cards">
 
         <!-- OWNER -->
-        <div class="contact-card">
-            <h3>Owner</h3>
-            <p class="contact-name">Biswajit Majumder</p>
-            <a href="tel:9854121140" class="contact-number">
-                📞 9854121140
-            </a>
-        </div>
+     <!-- OWNER WITH PHOTO -->
+<div class="contact-card photo-card">
+    <img src="owner.jpeg" alt="Owner Photo">
+
+    <div class="photo-overlay">
+        <h3>Owner</h3>
+        <p class="contact-name">Biswajit Majumder</p>
+        <a href="tel:9854121140" class="contact-number">
+            📞 9854121140
+        </a>
+    </div>
+</div>
 
        <!-- MANAGER WITH PHOTO -->
 <div class="contact-card photo-card">
@@ -76,3 +139,4 @@
 
 </body>
 </html>
+
