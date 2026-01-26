@@ -498,7 +498,7 @@ html {
 }
 
 body::after {
-  content: "Designed & Owned by Rakesh";
+  content: "Designedby Rakesh";
   position: fixed;
   bottom: 8px;
   right: 12px;
@@ -508,4 +508,5 @@ body::after {
   z-index: 9999;
   user-select: none;
 }
+
 
